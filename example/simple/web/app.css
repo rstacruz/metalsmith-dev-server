@@ -1,0 +1,25 @@
+body {
+  font-family: sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  flex: 1 1 auto;
+  text-align: center;
+  font-weight: 300;
+  line-height: 1.5;
+  font-size: 32px;
+  color: #888;
+}

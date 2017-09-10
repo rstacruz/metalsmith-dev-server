@@ -11,5 +11,8 @@
   },
   "bin": {
     "metalsmith-server-alt": "bin/metalsmith-server-alt"
+  },
+  "devDependencies": {
+    "metalsmith": "2.3.0"
   }
 }
