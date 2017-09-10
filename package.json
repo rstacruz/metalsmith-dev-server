@@ -1,0 +1,12 @@
+{
+  "name": "metalsmith-server-alt",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "2.18.13",
+    "debounce": "1.0.2",
+    "meow": "3.7.0",
+    "throat": "4.1.0"
+  }
+}

@@ -1,0 +1,36 @@
+#!/usr/bin/env node
+const cli = require('meow')(`
+  Usage:
+    $ metalsmith-server metalsmith.js
+
+  Options:
+    -p, --port NUM      port number
+    -w, --watch PATH    paths to watch
+
+  Other options:
+    -h, --help          show usage information
+    -v, --version       print version info and exit
+`, {
+  string: [
+    'port',
+    'watch'
+  ],
+  boolean: [
+    'help',
+    'version'
+  ],
+  alias: {
+    p: 'port',
+    w: 'watch',
+    h: 'help',
+    v: 'version'
+  }
+})
+
+if (!cli.input[0]) {
+  console.error('Error: please specify the path to metalsmith.js')
+  process.exit(1)
+}
+
+const run = require('../lib/index').run
+run(cli.flags, cli.input)
