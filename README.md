@@ -2,12 +2,14 @@
 
 > Development server for Metalsmith websites
 
-metalsmith-dev-server is a simple, yet powerful tool to allow you to develop Metalsmith sites. Featuring:
+metalsmith-dev-server is a simple, yet powerful tool to allow you to develop sites using the [Metalsmith] static site tool. Featuring:
 
+- Compatible with any Metalsmith project
+- Scroll syncing, network throttling, and more (via [Browsersync])
 - Live reload of CSS changes
-- Powered by [Browsersync] for scroll syncing, network throttling, etc
 
 [Browsersync]: https://browsersync.io/
+[Metalsmith]: http://metalsmith.io/
 
 ## Usage
 
