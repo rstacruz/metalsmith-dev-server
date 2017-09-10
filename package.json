@@ -1,5 +1,5 @@
 {
-  "name": "metalsmith-server-alt",
+  "name": "metalsmith-dev-server",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -10,7 +10,7 @@
     "throat": "4.1.0"
   },
   "bin": {
-    "metalsmith-server-alt": "bin/metalsmith-server-alt"
+    "metalsmith-dev-server": "bin/metalsmith-dev-server"
   },
   "devDependencies": {
     "metalsmith": "2.3.0"

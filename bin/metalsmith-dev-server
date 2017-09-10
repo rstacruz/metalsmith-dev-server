@@ -6,6 +6,7 @@ const cli = require('meow')(`
   Options:
     -p, --port NUM      port number
     -w, --watch PATH    paths to watch
+    -F, --full-reload   reload on all changes (not just CSS)
 
   Other options:
     -h, --help          show usage information
@@ -17,13 +18,15 @@ const cli = require('meow')(`
   ],
   boolean: [
     'help',
-    'version'
+    'version',
+    'full-reload'
   ],
   alias: {
     p: 'port',
     w: 'watch',
     h: 'help',
-    v: 'version'
+    v: 'version',
+    F: 'full-reload'
   }
 })
 
