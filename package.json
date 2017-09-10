@@ -8,5 +8,8 @@
     "debounce": "1.0.2",
     "meow": "3.7.0",
     "throat": "4.1.0"
+  },
+  "bin": {
+    "metalsmith-server-alt": "bin/metalsmith-server-alt"
   }
 }
