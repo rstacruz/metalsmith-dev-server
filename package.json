@@ -1,18 +1,42 @@
 {
   "name": "metalsmith-dev-server",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
+  "description": "> Development server for Metalsmith",
+  "version": "0.1.0",
+  "author": "Rico Sta. Cruz <rico@ricostacruz.com> (http://ricostacruz.com)",
+  "bin": {
+    "metalsmith-dev-server": "bin/metalsmith-dev-server"
+  },
+  "bugs": {
+    "url": "https://github.com/rstacruz/metalsmith-dev-server/issues"
+  },
   "dependencies": {
     "browser-sync": "2.18.13",
     "debounce": "1.0.2",
     "meow": "3.7.0",
     "throat": "4.1.0"
   },
-  "bin": {
-    "metalsmith-dev-server": "bin/metalsmith-dev-server"
-  },
   "devDependencies": {
     "metalsmith": "2.3.0"
+  },
+  "directories": {
+    "example": "example",
+    "lib": "lib"
+  },
+  "homepage": "https://github.com/rstacruz/metalsmith-dev-server#readme",
+  "keywords": [
+    "browser-sync",
+    "browsersync",
+    "livereload",
+    "metalsmith",
+    "server"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rstacruz/metalsmith-dev-server.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
