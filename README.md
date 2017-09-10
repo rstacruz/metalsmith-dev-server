@@ -13,57 +13,57 @@ metalsmith-dev-server is a simple, yet powerful tool to allow you to develop sit
 
 ## Usage
 
-0. **Install** — add this into your Metalsmith project.
+:package: **Install** — add this into your Metalsmith project.
 
-  ```sh
-  npm install --save-dev github:rstacruz/metalsmith-dev-server
-  ```
+```sh
+npm install --save-dev github:rstacruz/metalsmith-dev-server
+```
 
-0. **Create metalsmith.js** — Your project should have a file that exports the Metalsmith project.
+:pencil2: **Create metalsmith.js** — Your project should have a file that exports the Metalsmith project.
 
-  ```js
-  /*
-   * Example metalsmith.js:
-   * This builds the site when ran via `node metalsmith.js`.
-   * When used as `require('./metalsmith'), it returns the
-   * app instance.
-   */
+```js
+/*
+ * Example metalsmith.js:
+ * This builds the site when ran via `node metalsmith.js`.
+ * When used as `require('./metalsmith')`, it returns the
+ * app instance.
+ */
 
-  const Metalsmith = require('metalsmith')
+const Metalsmith = require('metalsmith')
 
-  const app = Metalsmith(__dirname)
-    .source('web')
-    .destination('public')
+const app = Metalsmith(__dirname)
+  .source('web')
+  .destination('public')
 
-  if (module.parent) {
-    module.exports = app
-  } else {
-    app.build(err => { if (err) { console.error(err.message); process.exit(1) } })
-  }
-  ```
+if (module.parent) {
+  module.exports = app
+} else {
+  app.build(err => { if (err) { console.error(err.message); process.exit(1) } })
+}
+```
 
-0. **Add scripts** — Add this to *package.json*.
+:memo: **Add scripts** — Add this to *package.json*.
 
-  ```js
-  "scripts": {
-    "dev": "metalsmith-dev-server metalsmith.js --watch web"
-  }
+```js
+"scripts": {
+  "dev": "metalsmith-dev-server metalsmith.js --watch web"
+}
 
-  // This example runs the Metalsmith app in `metalsmith.js`,
-  // and auto-rebuilds when files in `web/` is changed.
-  ```
+// This example runs the Metalsmith app in `metalsmith.js`,
+// and auto-rebuilds when files in `web/` is changed.
+```
 
-0. **Start the server** — Use your new script:
+:red_car: **Start the server** — Use your new script:
 
-  ```sh
-  npm run dev
-  ```
+```sh
+npm run dev
+```
 
-  Or to specify another port:
+Or to specify another port:
 
-  ```sh
-  npm run dev -- --port 3820
-  ```
+```sh
+npm run dev -- --port 3820
+```
 
 ## Also see
 
