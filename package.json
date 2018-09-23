@@ -1,7 +1,7 @@
 {
   "name": "metalsmith-dev-server",
-  "description": "> Development server for Metalsmith",
-  "version": "0.1.0",
+  "description": "Development server for Metalsmith",
+  "version": "0.2.0-0",
   "author": "Rico Sta. Cruz <rico@ricostacruz.com> (http://ricostacruz.com)",
   "bin": {
     "metalsmith-dev-server": "bin/metalsmith-dev-server"
